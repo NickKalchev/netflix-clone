@@ -1,0 +1,73 @@
+.footer {
+  border-top: 8px solid #222;
+  padding: 50px;
+  height: max-content;
+}
+
+.footer__heading {
+  color: #757575;
+  padding-left: 35px;
+  margin-block-end: 30px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer__links {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.footer__linkItem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 25%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.footer__link {
+  color: #757575;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  color: rgb(223, 3, 3);
+}
+
+.footer__end {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__creator {
+  color: #757575;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.footer__creator > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__creator > a:hover {
+  color: rgb(223, 3, 3);
+}
+
+.footer__end--Netflix {
+  color: rgb(223, 3, 3);
+}
