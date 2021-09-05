@@ -1,19 +1,18 @@
 import axios from '../axios';
 import React, { useEffect, useState } from 'react';
 import '../styles/Row.css';
-import ScrollContainer from 'react-indiana-drag-scroll'
-
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 function Row({ title, fetchUrl, largeRow = false }) {
 
-    const [movies, setMiovies] = useState([]);
+    const [movies, setMovies] = useState([]);
 
     const base_url = "https://image.tmdb.org/t/p/original/";
 
     useEffect(() => {
         async function fetchMovies() {
             const request = await axios.get(fetchUrl);
-            setMiovies(request.data.results);
+            setMovies(request.data.results);
             return request;
         }
 

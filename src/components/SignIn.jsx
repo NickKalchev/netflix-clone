@@ -14,7 +14,6 @@ function SignIn() {
             emailRef.current.value,
             passwordRef.current.value
         ).then((authUser) =>{
-            console.log(authUser);
         }).catch((error) => {
             alert(error.message);
         })
@@ -27,7 +26,6 @@ function SignIn() {
             emailRef.current.value,
             passwordRef.current.value
         ).then((authUser) =>{
-            console.log(authUser);
         }).catch((error) => {
             alert(error.message);
         })
