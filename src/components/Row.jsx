@@ -34,7 +34,6 @@ function Row({ title, fetchUrl, largeRow = false }) {
                         }`} alt={movie?.name} />   
                     )
                 ))}
-
             </ ScrollContainer>
 
         </div>

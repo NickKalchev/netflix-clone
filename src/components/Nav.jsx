@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Nav.css';
+import logo from '../images/netflix_logo.png';
+import avatar from '../images/avatar.png'
 
 function Nav() {
 
@@ -24,8 +26,8 @@ function Nav() {
         <div  className={`hiddenNav ${show && 'nav'}`}>
             <div className="nav__content">
 
-                <img className='nav__logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png" alt="" />
-                <img className='nav__avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
+                <img className='nav__logo' src={logo} alt="" />
+                <img className='nav__avatar' src={avatar} alt="" />
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import axios from '../axios';
 import React, { useEffect, useState } from 'react';
 import '../styles/Banner.css';
 import apiRequests from '../requests';
-
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 function Banner() {
 
@@ -39,8 +39,8 @@ function Banner() {
                     {movie?.title || movie?.name || movie?.original_name}
                 </h1>
                 <div className="banner__buttons">
-                    <button className="banner__button">Play</button>
-                    <button className="banner__button">My List</button>
+                    <button className="banner__button1"><PlayArrowIcon /> Play</button>
+                    <button className="banner__button2">My List</button>
                 </div>
                 <h1 className="banner__desc">
                     {truncate(movie?.overview, 220)}

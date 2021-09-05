@@ -15,3 +15,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html {
+  scrollbar-width: normal;
+  scrollbar-color: silver black;
+}
+
+html::-webkit-scrollbar {
+  width: 0.7vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(192, 192, 192, 0.63);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: silver;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}

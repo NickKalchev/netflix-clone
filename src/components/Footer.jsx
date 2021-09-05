@@ -9,7 +9,7 @@ function Footer() {
            </h3>
            <ul class="footer__links">
                <li class="footer__linkItem">
-                <a class="footer__link" href="https://help.netflix.com/support/412">FAQ</a>
+                    <a class="footer__link" href="https://help.netflix.com/support/412">FAQ</a>
                 </li>
                 <li class="footer__linkItem">
                     <a class="footer__link" href="https://help.netflix.com">Help Center</a>
@@ -40,9 +40,6 @@ function Footer() {
                 </li>
                 <li class="footer__linkItem">
                     <a class="footer__link" href="https://help.netflix.com/legal/privacy">Privacy</a>
-                </li>
-                <li class="footer__linkItem">
-                    <a class="footer__link" href="#">Cookie Preferences</a>
                 </li>
                 <li class="footer__linkItem">
                     <a class="footer__link" href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>

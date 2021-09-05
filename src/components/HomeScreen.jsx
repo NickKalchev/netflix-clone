@@ -2,6 +2,7 @@ import React from 'react';
 import apiRequests from '../requests';
 import '../styles/HomeScreen.css';
 import Banner from './Banner';
+import Footer from './Footer';
 import Nav from './Nav';
 import Row from './Row';
 
@@ -10,9 +11,9 @@ function HomeScreen() {
         <div className="homeScreen">
             <Nav />
 
-           <Banner />
+            <Banner />
 
-           <Row title='Netflix Originals' fetchUrl={apiRequests.fetchNetflixOriginals} largeRow />
+            <Row title='Netflix Originals' fetchUrl={apiRequests.fetchNetflixOriginals} largeRow />
             <Row title='Trending Now' fetchUrl={apiRequests.fetchTrending} />
             <Row title='Top Rated' fetchUrl={apiRequests.fetchTopRated} />
             <Row title='Action Movies' fetchUrl={apiRequests.fetchActionMovies} />
@@ -20,6 +21,8 @@ function HomeScreen() {
             <Row title='Horror Movies' fetchUrl={apiRequests.fetchHorrorMovies} />
             <Row title='Romance Movies' fetchUrl={apiRequests.fetchRomanceMovies} />
             <Row title='Documentaries' fetchUrl={apiRequests.fetchDocumentaries} />
+
+            <Footer />
         </div>
     )
 }

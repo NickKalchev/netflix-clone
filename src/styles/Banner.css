@@ -40,7 +40,36 @@
   );
 }
 
-.banner__button {
+.banner__buttons {
+  display: flex;
+}
+
+.banner__button1 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-left: 0.7rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.banner__button1 > .MuiSvgIcon-root {
+  font-size: 20px;
+}
+
+.banner__button1:hover > .MuiSvgIcon-root {
+  color: rgb(194, 0, 0);
+}
+
+.banner__button2 {
   cursor: pointer;
   color: white;
   outline: none;
@@ -55,7 +84,13 @@
   padding-bottom: 0.5rem;
 }
 
-.banner__button:hover {
+.banner__button1:hover {
+  color: black;
+  background-color: #e6e6e6;
+  transition: all 0.3s;
+}
+
+.banner__button2:hover {
   color: black;
   background-color: #e6e6e6;
   transition: all 0.3s;
