@@ -1,18 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Login.css';
 import logo from '../images/netflix_logo.png';
 import SignIn from './SignIn';
+import { useDispatch } from 'react-redux';
+import { signinEmail } from '../features/emailSlice';
 
 
 function Login() {
 
     const [signIn, setSignIn] = useState(false);
+    const [email, setEmail] = useState(null)
+    const dispatch = useDispatch();
+
+    const logWithEmail = (email) =>{
+        if (email) {
+          dispatch(
+            signinEmail({
+              email: email,
+            })              
+          );
+          setEmail(email);
+      }};
+
+    useEffect(() => {
+        return logWithEmail;
+    }, [dispatch]);
+    
 
     return (
         <div className="login">
             <div className="login__background">
                 <img className='login__backgroundLogo' src={logo} alt="" />
-                <button className="login__button">
+                <button onClick={() => setSignIn(true)} className="login__button">
                     Sign In
                 </button>
                 <div className="login__gradient"/>
@@ -35,8 +54,10 @@ function Login() {
 
                     <div className="login__input">
                         <form>
-                            <input type="email" placeholder='Email Address' />
-                            <button onClick={() => setSignIn(true)} className='login__getStartedButton'>GET STARTED</button>
+                            <input type="email" onChange={(e) => logWithEmail(e.target.value)} placeholder='Email Address' />
+                            {email ? (
+                                <button onClick={() => setSignIn(true)} className='login__getStartedButton'>Get Started ❯</button>
+                            ) : (<button onClick={() => alert('Please enter a valid email')} className='login__getStartedNoEmail'>Get Started ❯</button>)}
                         </form>
                     </div>
                 </>

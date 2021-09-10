@@ -17,7 +17,7 @@ function Banner() {
             const request = await axios.get(apiRequests.fetchNetflixOriginals);
             setMovie(
                 request.data.results[
-                    Math.floor(Math.random() * request.data.results.length -1)
+                    Math.floor(Math.random() * request.data?.results?.length -1)
                 ]
             );
             return request;
@@ -29,9 +29,15 @@ function Banner() {
     useEffect(() => {
         async function fetchMovieTrailer() {
             const trailer = await axios.get(`https://api.themoviedb.org/3/tv/${movie?.id}/videos?api_key=${API_KEY}&append_to_response=videos`);
-            setVideoURL(
-                `https://www.youtube.com/watch?v=${trailer?.data?.results[1]?.key}`
-            );
+            if(trailer?.data?.results[1]){
+                setVideoURL(
+                    `https://www.youtube.com/watch?v=${trailer?.data?.results[1]?.key}`
+                );       
+            }else {
+                setVideoURL(
+                    `https://www.youtube.com/watch?v=${trailer?.data?.results[0]?.key}`
+                );   
+            }
             return trailer;
         }
         fetchMovieTrailer()
@@ -61,7 +67,7 @@ function Banner() {
             </div>
 
             <div className="banner--bottomFading" />
-            {videoURL && play && <ReactPlayer width={"100%"} url={videoURL} />}
+            {videoURL && play && <ReactPlayer width={"100%"} controls={true} url={videoURL} />}
         </header>
     )
 }
