@@ -30,7 +30,8 @@ function Row({ title, fetchUrl, largeRow = false }) {
                     (!largeRow && movie.backdrop_path)) && (
                         <img key={movie.id} className={`row__image ${largeRow && "row__largeImage"}`} src={`${base_url}${
                             largeRow ? movie?.poster_path : movie?.backdrop_path
-                        }`} alt={movie?.name} />   
+                        }`} alt={movie?.name} />
+
                     )
                 ))}
             </ ScrollContainer>

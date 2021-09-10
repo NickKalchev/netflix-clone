@@ -8,6 +8,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
+  cursor: pointer;
 }
 
 .row__images::-webkit-scrollbar {
@@ -33,4 +34,10 @@
 
 .row__largeImage:hover {
   transform: scale(1.09);
+}
+
+.row__images > p {
+  /* display: none; */
+  z-index: 2;
+  bottom: 0;
 }
