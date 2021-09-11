@@ -29,3 +29,42 @@
   background-color: gray;
   cursor: not-allowed;
 }
+
+@media only screen and (max-width: 900px) {
+  .plans {
+    margin-top: 7px;
+  }
+
+  .plans__subscriptions {
+    padding: 15px;
+    opacity: 0.9;
+    width: 125%;
+  }
+
+  .plans__subscriptions > button {
+    padding: 5px 10px;
+  }
+
+  .plans__subscriptions > button {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .plans__subscriptions--disabled > button {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  .plans__info > h5 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -15px;
+  }
+
+  .plans__info > h6 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: -15px;
+  }
+}

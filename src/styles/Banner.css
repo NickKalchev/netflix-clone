@@ -30,7 +30,7 @@
   padding-left: 0.7rem;
 }
 
-.banner--bottomFading {
+.banner__bottomFading {
   height: 7.4rem;
   background-image: linear-gradient(
     180deg,
@@ -94,4 +94,60 @@
   color: black;
   background-color: #e6e6e6;
   transition: all 0.3s;
+}
+
+@media only screen and (max-width: 900px) {
+  .banner {
+    height: 258px;
+  }
+
+  .banner__content {
+    margin-left: 20px;
+    padding-top: 70px;
+    height: 100px;
+  }
+
+  .banner__title {
+    font-size: 1.8rem;
+    padding-left: 0.7rem;
+  }
+
+  .banner__desc {
+    width: 80%;
+    line-height: 1;
+    color: lightgray;
+    padding-top: 0.8rem;
+    font-size: 0.85rem;
+    height: 50px;
+    font-weight: 400;
+  }
+
+  .banner__bottomFading {
+    height: 5.5rem;
+  }
+
+  .banner__button1 {
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    margin-left: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .banner__button1 > .MuiSvgIcon-root {
+    font-size: 18px;
+  }
+
+  .banner__button1:active > .MuiSvgIcon-root {
+    color: rgb(194, 0, 0);
+  }
+
+  .banner__button2 {
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    margin-left: 0.6rem;
+    padding-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding-bottom: 0.4rem;
+  }
 }

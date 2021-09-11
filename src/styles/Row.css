@@ -36,8 +36,32 @@
   transform: scale(1.09);
 }
 
-.row__images > p {
-  /* display: none; */
-  z-index: 2;
-  bottom: 0;
+@media only screen and (max-width: 900px) {
+  .row {
+    margin-left: 15px;
+  }
+
+  .row > h2 {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .row__images {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: -12px;
+  }
+
+  .row__image {
+    max-height: 110px;
+    border-radius: 5px;
+    margin-right: 7px;
+  }
+
+  .row__largeImage {
+    max-height: 160px;
+  }
 }

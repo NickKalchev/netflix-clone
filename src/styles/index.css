@@ -19,6 +19,7 @@ code {
 html {
   scrollbar-width: normal;
   scrollbar-color: silver black;
+  background-color: black;
 }
 
 html::-webkit-scrollbar {

@@ -74,3 +74,83 @@
 .profile__plans > h4 > span {
   color: #e50914;
 }
+
+@media only screen and (max-width: 900px) {
+  .profile {
+    height: 100vh;
+    color: white;
+    width: 90%;
+    margin-left: -35px;
+  }
+
+  .profile__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding-top: 120px;
+  }
+
+  .profile__content > h1 {
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 15px;
+    margin-left: -20px;
+  }
+
+  .profile__info > img {
+    height: 2.5rem;
+    margin-left: -20px;
+  }
+
+  .profile__details {
+    color: white;
+    margin-left: 15px;
+    flex: 1;
+  }
+
+  .profile__details > h2 {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    width: 126%;
+  }
+
+  .profile__signOut {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    margin-top: 2%;
+    width: 135%;
+    margin-bottom: 50px;
+  }
+
+  .profile__plans {
+    margin-top: 15px;
+  }
+
+  .profile__plans > h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 135%;
+  }
+
+  .profile__plans > h4 {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 125%;
+  }
+
+  .plans > p {
+    font-size: 13px;
+  }
+}

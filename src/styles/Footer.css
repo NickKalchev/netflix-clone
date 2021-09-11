@@ -72,3 +72,30 @@
 .footer__end--Netflix {
   color: rgb(223, 3, 3);
 }
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    border-top: 7px solid #222;
+    padding: 10px;
+    margin-left: -5px;
+  }
+
+  .footer__heading {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-block-end: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer__linkItem > a {
+    font-size: 12px;
+  }
+
+  .footer__creator {
+    font-size: 15px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+}

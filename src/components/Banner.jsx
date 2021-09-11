@@ -66,8 +66,10 @@ function Banner() {
                 </h1>
             </div>
 
-            <div className="banner--bottomFading" />
-            {videoURL && play && <ReactPlayer width={"100%"} controls={true} url={videoURL} />}
+            <div className="banner__bottomFading" />
+            <div className="banner__video">
+             {videoURL && play && <ReactPlayer width={"100%"} controls={true} url={videoURL} />}
+            </div>
         </header>
     )
 }
