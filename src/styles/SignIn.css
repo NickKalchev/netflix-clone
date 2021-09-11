@@ -51,3 +51,38 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 900px) {
+  .signIn {
+    max-width: 80%;
+    padding: 40px;
+    border-radius: 5px;
+  }
+
+  .signIn > form > h1 {
+    font-size: 25px;
+  }
+
+  .signIn > form > h1 {
+    margin-bottom: 15px;
+  }
+
+  .signIn > form > input {
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 3px 15px;
+    border-radius: 5px;
+  }
+
+  .signIn > form > button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .signIn > form > h4 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}

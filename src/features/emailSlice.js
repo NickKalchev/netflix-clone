@@ -11,10 +11,13 @@ export const emailSlice = createSlice({
     signinEmail: (state, action) => {
       state.email = action.payload;
     },
+    noEmail: (state) => {
+      state.email = null;
+    },
   },
 });
 
-export const { signinEmail } = emailSlice.actions;
+export const { signinEmail, noEmail } = emailSlice.actions;
 
 export const selectEmail = (state) => state.email.email;
 

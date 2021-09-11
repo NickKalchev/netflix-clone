@@ -3,7 +3,7 @@ import '../styles/Login.css';
 import logo from '../images/netflix_logo.png';
 import SignIn from './SignIn';
 import { useDispatch } from 'react-redux';
-import { signinEmail } from '../features/emailSlice';
+import { noEmail, signinEmail } from '../features/emailSlice';
 
 
 function Login() {
@@ -20,7 +20,12 @@ function Login() {
             })              
           );
           setEmail(email);
-      }};
+      } else if (!email) {
+        dispatch(
+            noEmail()              
+          );
+          setEmail(null);
+      }}
 
     useEffect(() => {
         return logWithEmail;
