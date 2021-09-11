@@ -96,6 +96,23 @@
   transition: all 0.3s;
 }
 
+.banner__player {
+  z-index: 2;
+}
+
+.banner__video > .MuiSvgIcon-root {
+  z-index: 3;
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.banner__video > .MuiSvgIcon-root:hover {
+  color: rgb(194, 0, 0);
+  font-size: 30px;
+}
+
 @media only screen and (max-width: 900px) {
   .banner {
     height: 258px;
@@ -149,5 +166,10 @@
     padding-top: 0.5rem;
     background-color: rgba(51, 51, 51, 0.5);
     padding-bottom: 0.4rem;
+  }
+
+  .banner__video > .MuiSvgIcon-root {
+    margin-left: 15px;
+    margin-top: 10px;
   }
 }
