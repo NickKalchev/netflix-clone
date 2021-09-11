@@ -14,7 +14,6 @@ function HomeScreen() {
             <Banner />
 
             <Row title='Netflix Originals' fetchUrl={apiRequests.fetchNetflixOriginals} largeRow />
-            <Row title='Trending Now' fetchUrl={apiRequests.fetchTrending} />
             <Row title='Top Rated' fetchUrl={apiRequests.fetchTopRated} />
             <Row title='Action Movies' fetchUrl={apiRequests.fetchActionMovies} />
             <Row title='Comedy Movies' fetchUrl={apiRequests.fetchComedyMovies} />
