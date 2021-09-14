@@ -4,15 +4,17 @@ import logo from '../images/netflix_logo.png';
 import SignIn from './SignIn';
 import { useDispatch } from 'react-redux';
 import { noEmail, signinEmail } from '../features/emailSlice';
+import { useHistory } from 'react-router';
 
 
 function Login() {
 
     const [signIn, setSignIn] = useState(false);
     const [email, setEmail] = useState(null)
+    const history = useHistory();
     const dispatch = useDispatch();
 
-    const logWithEmail = (email) =>{
+    const logWithEmail = React.useCallback((email) =>{
         if (email) {
           dispatch(
             signinEmail({
@@ -25,17 +27,22 @@ function Login() {
             noEmail()              
           );
           setEmail(null);
-      }}
+      }}, [dispatch]);
+
+      const handleClick = () => {
+        history.push('/');
+        setSignIn(false);
+      }
 
     useEffect(() => {
         return logWithEmail;
-    }, [dispatch]);
+    }, [dispatch, logWithEmail]);
     
 
     return (
         <div className="login">
             <div className="login__background">
-                <img className='login__backgroundLogo' src={logo} alt="" />
+                <img onClick={() => handleClick()} className='login__backgroundLogo' src={logo} alt="" />
                 <button onClick={() => setSignIn(true)} className="login__button">
                     Sign In
                 </button>

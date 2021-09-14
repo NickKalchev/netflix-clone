@@ -29,6 +29,7 @@
   width: 150px;
   object-fit: contain;
   padding: 20px;
+  cursor: pointer;
 }
 
 .login__button {
@@ -95,7 +96,7 @@
 }
 
 .login__getStartedButton {
-  padding: 12.5px 20px 17.1px 20px;
+  padding: 11.5px 20px 17px 20px;
   font-size: 1.2rem;
   color: white;
   background-color: #e50914;
@@ -107,7 +108,7 @@
 }
 
 .login__getStartedNoEmail {
-  padding: 12.5px 20px 17.1px 20px;
+  padding: 11.5px 20px 17px 20px;
   font-size: 1.2rem;
   color: white;
   background-color: #e50914;
