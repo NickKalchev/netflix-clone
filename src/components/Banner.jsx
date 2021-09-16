@@ -91,7 +91,6 @@ function Banner() {
                 </h1>
                 <div className="banner__buttons">
                     <button onClick={() => setPlay(true)} className="banner__button1"><PlayArrowIcon /> Play</button>
-                    <button className="banner__button2">My List</button>
                 </div>
                 <h1 className="banner__desc">
                     {truncate(movie?.overview, 220)}

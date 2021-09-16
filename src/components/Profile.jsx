@@ -13,6 +13,10 @@ function Profile() {
     const user = useSelector(selectUser);
     const plan = useSelector(selectPlan);
 
+    const signOut = () => { 
+        auth.signOut();
+    };
+
     return (
        <div className="profile">
            <Nav hiddenAvatar />
@@ -28,7 +32,7 @@ function Profile() {
                            {!plan && (
                                 <h4>Please, subscibe to a plan to watch movies and TV shows on <span>Netflix</span></h4>
                             )}
-                            <button onClick={() => auth.signOut()} className="profile__signOut">
+                            <button onClick={() => signOut()} className="profile__signOut">
                                 Sign Out
                             </button>
                        </div>
